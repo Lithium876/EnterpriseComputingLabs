@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title>Week 2 Lab</title>
 </head>
 <body>
@@ -35,10 +35,19 @@
         <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
         <br />
         <asp:Label ID="lblFaculty" runat="server" Text="Faculty"></asp:Label>
-        <asp:TextBox ID="txtFaculty" runat="server"></asp:TextBox>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem>FENC</asp:ListItem>
+            <asp:ListItem>COBAM</asp:ListItem>
+            <asp:ListItem>FOSS</asp:ListItem>
+        </asp:DropDownList>
         <br />
         <asp:Label ID="lblCourseOfStudy" runat="server" Text="Course of Study"></asp:Label>
-        <asp:TextBox ID="txtCourseOfStudy" runat="server"></asp:TextBox>
+        <asp:DropDownList ID="DropDownList2" runat="server">
+            <asp:ListItem>Bsc Computing</asp:ListItem>
+            <asp:ListItem>Bsc Information Technology</asp:ListItem>
+            <asp:ListItem>Bsc Business Administration</asp:ListItem>
+            <asp:ListItem>Bsc Engineering</asp:ListItem>
+        </asp:DropDownList>
         <br />
     </div>
     </form>
