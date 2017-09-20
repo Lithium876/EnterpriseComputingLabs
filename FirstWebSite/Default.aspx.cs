@@ -16,14 +16,22 @@ public partial class _Default : System.Web.UI.Page
     {
         StudentInformation student = new StudentInformation();
 
+        //Capture user input and store it in the class variables
         student.StudentId = Convert.ToInt32(txtStudentID.Text);
         student.FirstName = txtFirstName.Text;
         student.LastName = txtLastName.Text;
+        student.Address = txtAddress.Text;
         student.Email = txtEmail.Text;
         student.Gender = rblGender.SelectedItem.Text;
         student.DateOfBirth = calDateOfBirth.SelectedDate;
         student.ContactNumber = txtContactNumber.Text;
         student.Faculty = ddlFaculty.SelectedItem.Text;
         student.CourseOfStudy = ddlCourseOfStudy.SelectedItem.Text;
+
+        //Create a session called "Student Information
+        Session["Student Information"] = student;
+
+        //Called the second page
+        Response.Redirect("Display.aspx");
     }
 }
