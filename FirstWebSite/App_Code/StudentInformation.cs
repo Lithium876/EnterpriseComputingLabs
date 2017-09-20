@@ -26,17 +26,4 @@ public class StudentInformation
 		// TODO: Add constructor logic here
 		//
 	}
-
-    public void display()
-    {
-        System.Console.WriteLine(StudentId);
-        System.Console.WriteLine(FirstName);
-        System.Console.WriteLine(LastName);
-        System.Console.WriteLine(Gender);
-        System.Console.WriteLine(DateOfBirth);
-        System.Console.WriteLine(Email);
-        System.Console.WriteLine(ContactNumber);
-        System.Console.WriteLine(Faculty);
-        System.Console.WriteLine(CourseOfStudy);
-    }
 }
