@@ -19,6 +19,7 @@ public partial class _Default : System.Web.UI.Page
         student.StudentId = Convert.ToInt32(txtStudentID.Text);
         student.FirstName = txtFirstName.Text;
         student.LastName = txtLastName.Text;
+        student.Email = txtEmail.Text;
         student.Gender = rblGender.SelectedItem.Text;
         student.DateOfBirth = calDateOfBirth.SelectedDate;
         student.ContactNumber = txtContactNumber.Text;
