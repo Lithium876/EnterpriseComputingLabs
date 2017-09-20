@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Week 3 Lab</title>
+    <title>Week 4 Lab</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -41,6 +41,15 @@
                         </td>
                         <td>
                             <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                      <tr>
+                        <td>
+                            <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
+
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtAddress" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
