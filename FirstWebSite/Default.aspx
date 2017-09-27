@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Week 4 Lab</title>
+    <title>Week 5 Lab</title>
+    <link href="App_Themes/style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -88,6 +89,20 @@
                             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                         </td>
                     </tr>
+                     <tr>
+                        <td>
+                            <asp:Label ID="lblHobbies" runat="server" Text="Hobbies"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:CheckBoxList ID="cblHobbies" runat="server">
+                                <asp:ListItem Value="1">Swimming</asp:ListItem>
+                                <asp:ListItem Value="2">Reading</asp:ListItem>
+                                <asp:ListItem Value="3">Coding</asp:ListItem>
+                                <asp:ListItem Value="4">Playing Music</asp:ListItem>
+                                <asp:ListItem Value="5">Hiking</asp:ListItem>
+                            </asp:CheckBoxList>
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <asp:Label ID="lblFaculty" runat="server" Text="Faculty"></asp:Label>
@@ -106,10 +121,10 @@
                         </td>
                         <td>
                             <asp:DropDownList ID="ddlCourseOfStudy" runat="server">
-                                <asp:ListItem>Bsc Computing</asp:ListItem>
-                                <asp:ListItem>Bsc Information Technology</asp:ListItem>
-                                <asp:ListItem>Bsc Business Administration</asp:ListItem>
-                                <asp:ListItem>Bsc Engineering</asp:ListItem>
+                                <asp:ListItem Value="135">Bsc Computing</asp:ListItem>
+                                <asp:ListItem Value="125">Bsc Information Technology</asp:ListItem>
+                                <asp:ListItem Value="112">Bsc Business Administration</asp:ListItem>
+                                <asp:ListItem Value="145">Bsc Engineering</asp:ListItem>
                             </asp:DropDownList>
                         </td>
                     </tr>
