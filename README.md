@@ -1,5 +1,5 @@
 # Enterprise Computing 1 Labs
-This repository contains lab activites done in Enterprise Computing 1
+This repository contains lab activities  done in Enterprise Computing 1
 
 ## Activity History
 * Week 2 - Started a Student Registration Project in Visual Studio C#
