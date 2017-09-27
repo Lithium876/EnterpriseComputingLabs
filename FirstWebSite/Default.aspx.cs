@@ -11,7 +11,7 @@ public partial class _Default : System.Web.UI.Page
     {
 
     }
-   
+
     protected void submitSudentInformation_Click(object sender, EventArgs e)
     {
         StudentInformation student = new StudentInformation();
@@ -27,6 +27,23 @@ public partial class _Default : System.Web.UI.Page
         student.ContactNumber = txtContactNumber.Text;
         student.Faculty = ddlFaculty.SelectedItem.Text;
         student.CourseOfStudy = ddlCourseOfStudy.SelectedItem.Text;
+        student.NumberOfCredits = Convert.ToInt32(ddlCourseOfStudy.SelectedValue);
+
+        //Capture information for checkbox
+        for(int i = 0; i < cblHobbies.Items.Count; i++)
+        {
+            if (cblHobbies.Items[i].Selected)
+            {//if first hooby is being added
+                if (student.Hobbies == null)
+                {
+                    student.Hobbies = cblHobbies.Items[i].Text;
+                }
+                else
+                {//add an additional hobbies
+                    student.Hobbies += ", " + cblHobbies.Items[i].Text;
+                }
+            }
+        }
 
         //Create a session called "Student Information
         Session["Student Information"] = student;
