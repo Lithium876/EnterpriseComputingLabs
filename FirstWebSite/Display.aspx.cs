@@ -18,10 +18,13 @@ public partial class Display : System.Web.UI.Page
         lblStudentNameOutput.Text = StudentDetails.FirstName + " " + StudentDetails.LastName;
         lblGenderOutput.Text = StudentDetails.Gender;
         lblEmailOutput.Text = StudentDetails.Email;
+        lblHobbiesOutput.Text = StudentDetails.Hobbies;
         lblDateOfBirthOutput.Text = Convert.ToString(StudentDetails.DateOfBirth);
         lblAddressOutput.Text = StudentDetails.Address;
         lblContactNumberOutput.Text = StudentDetails.ContactNumber;
         lblFacultyOutput.Text = StudentDetails.Faculty;
         lblCourseOfStudyOutput.Text = StudentDetails.CourseOfStudy;
+        //Called a function to calculate the student's school fee based off selected Course of Study
+        lblSchoolFeeOutput.Text = StudentDetails.CalculateSchoolFee().ToString("c");
     }
 }
