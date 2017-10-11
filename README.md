@@ -10,7 +10,7 @@ This repository contains lab activities  done in Enterprise Computing 1
 * Week 6 - Lab Test
 * Week 7 - Validation Controls C# and Introduction to Database
 
-## Progress as at Week 5
+## Progress as at Week 7
 ![Progress](https://github.com/Lithium95/EnterpriseComputingLabs/blob/master/img/view.png)
 
 ## Lab Test
