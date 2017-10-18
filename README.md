@@ -9,7 +9,7 @@ This repository contains lab activities  done in Enterprise Computing 1
 * Week 5 - Adding Style (CSS), Capture data from combo box list, calling functions C#
 * Week 6 - Lab Test
 * Week 7 - Validation Controls C# and Introduction to Database
-* Week 8 - Added Store Procedures to Database, connected Database to Web App
+* Week 8 - Linked tables, added Store Procedures to Database, connected Database to Web App
 
 ## Progress as at Week 7
 ![Progress](https://github.com/Lithium95/EnterpriseComputingLabs/blob/master/img/view.png)
